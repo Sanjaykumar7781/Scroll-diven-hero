@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scroll-driven hero animation built with HTML, CSS, JavaScript and GSAP.">
+  <title>Welcome Itz Fizz — Scroll Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-noise"></div>
+      <div class="hero-grid"></div>
+
+      <header class="nav">
+        <a class="brand" href="#hero" aria-label="Itz Fizz home">ITZ<span>FIZZ</span></a>
+        <div class="nav-pill">SCROLL TO EXPLORE <span>↓</span></div>
+      </header>
+
+      <div class="hero-copy">
+        <p class="eyebrow">DIGITAL EXPERIENCE / 2026</p>
+        <h1 class="headline" aria-label="Welcome Itz Fizz">
+          <span>W E L C O M E</span>
+          <span>I T Z F I Z Z</span>
+        </h1>
+        <p class="subcopy">A scroll-led visual experiment where motion, numbers and design move together.</p>
+      </div>
+
+      <div class="visual-wrap" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="speed-line line-1"></div>
+        <div class="speed-line line-2"></div>
+        <div class="speed-line line-3"></div>
+        <img class="hero-object" src="assets/fizz-car.svg" alt="">
+        <div class="object-shadow"></div>
+      </div>
+
+      <div class="stats" aria-label="Impact statistics">
+        <article class="stat">
+          <strong>58<span>%</span></strong>
+          <p>Increase in pick up point use</p>
+        </article>
+        <article class="stat">
+          <strong>23<span>%</span></strong>
+          <p>Decrease in customer phone calls</p>
+        </article>
+        <article class="stat">
+          <strong>27<span>%</span></strong>
+          <p>Increase in pick up point use</p>
+        </article>
+        <article class="stat">
+          <strong>40<span>%</span></strong>
+          <p>Decrease in customer phone calls</p>
+        </article>
+      </div>
+
+      <div class="scroll-hint"><span></span> KEEP SCROLLING</div>
+    </section>
+
+    <section class="story">
+      <div class="story-inner">
+        <p class="eyebrow">THE MOTION SYSTEM</p>
+        <h2>Built to make every scroll <em>feel intentional.</em></h2>
+        <p class="story-text">
+          The visual responds directly to your scroll position. The object translates, rotates and scales
+          with interpolation instead of running on an autoplay timeline.
+        </p>
+        <div class="story-cards">
+          <div><span>01</span><b>POSITION</b><p>Scroll progress controls movement.</p></div>
+          <div><span>02</span><b>DEPTH</b><p>Scale and rotation create dimensionality.</p></div>
+          <div><span>03</span><b>FLOW</b><p>GSAP smoothing keeps the interaction fluid.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>ITZ FIZZ / SCROLL EXPERIMENT</span>
+      <span>HTML · CSS · JAVASCRIPT · GSAP</span>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
